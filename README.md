@@ -6,6 +6,11 @@ Repositório [pessoal][Natan Albuquerque] de estudos do curso de fundamentos de 
 
 Primeira parte do curso explora as vantagens e explana tópicos básicos do desenvolvimento de Web Services. Aulas ministradas pelo professor  [Rafael Galleani][]. Notas de estudo estão em [Vantagens e desenvolvimento de Web Services](./anotacoes/VantagensDesenvolvimentoWebServices.md).
 
+## Parte 2 - Conceito de Arquitetura em Aplicações para a Internet
+
+Segunda parte do curso explora conceitos de arquitetura de sistemas para internet. Aulas ministradas pelo professor [Jefferson Stachelki][]. Notas de estudo estão em [Conceito de Arquitetura em Aplicações para a Internet](./anotacoes/ConceitoArquiteturaAplicacoesInternet.md).
+
 [DIO]:https://web.digitalinnovation.one "Digital Innovation One"
 [Natan Albuquerque]:https://github.com/albuquerq "Natan Albuquerque"
 [Rafael Galleani]:https://github.com/rafegal
+[Jefferson Stachelki]:https://github.com/jeffhsta
