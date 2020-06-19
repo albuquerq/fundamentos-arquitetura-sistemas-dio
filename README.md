@@ -5,7 +5,12 @@ Repositório [pessoal][Natan Albuquerque] de estudos do curso de fundamentos de 
 ## Parte 1 - Vantagens e desenvolvimento de Web Services
 
 Primeira parte do curso explora as vantagens e explana tópicos básicos do desenvolvimento de Web Services.
+<<<<<<< HEAD
 Aulas ministradas pelo professor  [Rafael Galleani][]. Notas de estudo estão em [Vantagens e desenvolvimento de Web Services](./anotacoes/VantagensDesenvolvimentoWebServices.md).
+=======
+Aulas ministradas pelo professor  [Rafael Galleani][]. Notas de estudo estão em [Vantagens e desenvolvimento de Web Services](anotacoes/VantagensDesenvolvimentoWebServices.md).
+
+>>>>>>> 9c45a575fa3ebff1a95970ca9a94d082bb0a35fe
 
 [DIO]:https://web.digitalinnovation.one "Digital Innovation One"
 [Natan Albuquerque]:https://github.com/albuquerq "Natan Albuquerque"
