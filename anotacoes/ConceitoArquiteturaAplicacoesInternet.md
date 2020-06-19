@@ -6,11 +6,11 @@ O conteúdo de acompanhamento das aulas pode ser encontrado [nesse repositório 
 
 Alguns conhecimentos básicos são importantes para o entendimento do conteúdo apresentado. Seguem links de leituras rápidas cobrindo alguns desses tópicos levantados pelo professor.
 
-- [HTTP][HTTP];
-- [Proxy][PROXY];
-- [RES API](./VantagensDesenvolvimentoWebServices.md);
-- [Docker][DOCKER];
-- [Kubernets][KUBERNETES];
+- [HTTP][HTTP] (Vídeo explicativo [aqui][VIDEO_HTTP]);
+- [Proxy][PROXY] (Vídeo explicativo [aqui][VIDEO_PROXY]);
+- [REST API](./VantagensDesenvolvimentoWebServices.md) (Vídeo explicativo [aqui][VIDEO_REST]);
+- [Docker][DOCKER] (Vídeo explicativo [aqui][VIDEO_DOCKER]);
+- [Kubernets][KUBERNETES] (Vídeo explicativo [aqui][VIDEO_KUBERNETES]);
 
 ## Tipos de Arquitetura
 
@@ -49,6 +49,8 @@ Esse estilo de arquitetura de microserviço segue um **modelo de pipeline**, ess
 
 ## Comparativo Entre as Arquiteturas
 
+
+
 ## Gerenciamento de Erros e Volume de Acessos
 
 
@@ -56,7 +58,17 @@ Esse estilo de arquitetura de microserviço segue um **modelo de pipeline**, ess
 [Natan Albuquerque]:https://github.com/albuquerq "Natan Albuquerque"
 [professor]:https://github.com/jeffhsta "Jefferson Stachelki"
 
+<!-- Conteúdo para estudo -->
+
 [HTTP]:https://pt.wikipedia.org/wiki/Hypertext_Transfer_Protocol "Hypertext Transfer Protocol"
 [PROXY]:https://pt.wikipedia.org/wiki/Proxy "Proxy"
 [DOCKER]:https://docs.docker.com/get-started/ "Docker"
 [KUBERNETES]:https://kubernetes.io/pt/ "Kubernetes"
+
+<!-- Links de vídeos úteis -->
+
+[VIDEO_HTTP]: https://youtu.be/fhAXgcD21iE "YouTube - Space Rails - Como funciona uma requisição HTTP?"
+[VIDEO_PROXY]: https://youtu.be/Xl_X1dYN_sk "YouTube - Marcelo Franco - O que é um proxy reverso?"
+[VIDEO_REST]: https://youtu.be/cRHF4trs318 "YouTube - Canal TI - REST em 6 minutos"
+[VIDEO_DOCKER]: https://youtu.be/Noi4MOHrZAc "YouTube - LINUXtips - O que é Docker? Tutorial rápido  Descomplicando o Docker V1 - Parte 2"
+[VIDEO_KUBERNETES]: https://youtu.be/a-2OBHlM5gU "YouTube - School of Net - Você sabe o que é o Kubernetes? | Wesley Willians"
