@@ -6,7 +6,6 @@ Repositório [pessoal][Natan Albuquerque] de estudos do curso de fundamentos de 
 
 Primeira parte do curso explora as vantagens e explana tópicos básicos do desenvolvimento de Web Services. Aulas ministradas pelo professor  [Rafael Galleani][]. Notas de estudo estão em [Vantagens e desenvolvimento de Web Services](./anotacoes/VantagensDesenvolvimentoWebServices.md).
 
-
 [DIO]:https://web.digitalinnovation.one "Digital Innovation One"
 [Natan Albuquerque]:https://github.com/albuquerq "Natan Albuquerque"
 [Rafael Galleani]:https://github.com/rafegal
