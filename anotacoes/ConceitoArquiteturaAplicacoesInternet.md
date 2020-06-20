@@ -52,7 +52,7 @@ Esse estilo de arquitetura de micro serviço segue um **modelo de pipeline**, es
 Arquitetura | Pros | Contra
 -- |:-- | --
 Monolito | Baixa complexidade<br>Monitoramento simplificado| Stack única<br>Compartilhamento de recursos<br>Acoplamento<br>Escalabilidade mais complexa
- Micro serviços (Tipo 1) | Stack dinâmica<br>Simples escalabilidade | Acoplamento<br>Monitoramento mais complexo<br>Provisionamento mais complexo
+ Micro serviço (Tipo 1) | Stack dinâmica<br>Simples escalabilidade | Acoplamento<br>Monitoramento mais complexo<br>Provisionamento mais complexo
  Micro serviço (Tipo 2) | Stack dinâmica<br>Simples escalabilidade<br>Desacoplamento | Monitoramento mais complexo<br>Provisionamento mais complexo
  Micro serviço (Tipo 3) | Stack dinâmica<br>Simples escalabilidade<br>Desacoplamento<br>Menor complexidade | Provisionamento mais complexo<br>Plataforma inteira dependente do gerenciador de pipeline
 
@@ -65,6 +65,12 @@ O **micro serviço do tipo 2** ganha o desacoplamento como vantagem em relação
 O **micro serviço do tipo 3** tem menor complexidade que o de tipo 2 ao tratar a comunicação como um pipeline que tem um fluxo bem definido. Dessa forma, proporciona maior clareza na visualização do fluxo como um todo; Têm como pontos fracos: o provisionamento, que aqui possa a trocar o message brocker pelo gerenciador de pipeline; e fica totalmente dependente do gerenciador de pipeline para seu funcionamento, esse que, em caso de problema, tem que reverter todo o fluxo para não deixar inconsistências, podendo dessa forma tornar-se um gargalo para a aplicação.
 
 ## Gerenciamento de Erros e Volume de Acessos
+
+Todas as arquiteturas devem ter isso em comum. Pois precisam gerenciar error e o volume de acesso. O gerenciamento de erros é mais complexos em comunicações assíncronas, comum nos micro serviços do tipo 2, e também no pipeline.
+
+Nas comunicações assíncronas pode ser adotado o **dead letter queue** como mecanismo de correção de erros. Que é uma fila que armazena as comunicações que sofreram erros para que essas sejam executadas mais uma vez na intenção de não ocorram novamente. Nesse caso é fácil observar o surgimento de erros através da fila, atentando para a quantidade (tamanho da fila) e as causas desses erros (mensagens).
+
+No caso de erros de pipeline, são utilizadas filas de re-tentativas para pipelines assíncronos e mecanismos de rollback para pipelines síncronos.
 
 
 [DIO]:https://web.digitalinnovation.one "Digital Innovation One"
