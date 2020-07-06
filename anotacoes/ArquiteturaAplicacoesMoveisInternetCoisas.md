@@ -39,9 +39,36 @@ Nos são apresentadas as *Smart Building* (edificações inteligentes) como exem
 
 ## Arquitetura da Internet das Coisas
 
+O primeiro passo é saber como conectar as coisas. Nesse quesito existem muitas soluções, desde soluções mais simples até soluções mais industriais e produtos mais completos que encapsulam as questões mais técnicas e oferecem transparência aos usuários. Exemplos desses últimos são *home assistents*, *Google Assistent* e Amazon Alexa, que funcionam através de comandos de voz.
+
+No processo de escolha dos produtos deve-se levar em consideração atributos como:
+
+- Baixo consumo de energia;
+- Rede de dados limitado;
+- Resiliencia;
+- Segurança;
+- Customização;
+- Baixo custo.
+
+Um exemplo de plataforma é o Arduino, que tem como princípio ser uma plataforma de prototipagem. Ele é modular e pode ser utilizado para fazer muitas coisas. é programado na maioria das vezes utilizando-se as linguagens C/C++.
+
+Para embarcados que precisam de maior confiabilidade e controle mais avançado de dados utilizam-se os MCUs (microcomputador de chipo único), eles possuem um sistema operacional de tempo real, onde o tempo de resposta é respeitado conforme definição.
+
+Outras soluções são os minicoputadores, como exemplo o Raspberry Pi, que é um computador completo com sistema operacional linux, permitindo o uso de muitas linguagens e ferramentas de desenvolvimento desse sistema.
+
+O caso de exemplo apresentado é um sistema de rastreamento de veículos. Nesse exemplo é indicado o uso de GPS Trackers ou smartphones para a coleta da geolocalização. No cenário de utilização de ambos os dispositivos para a coleta, surge a necessidade de definir um protocolo único de comunicação. O [**MQTT**][MQTT] (MQ Telemetry Transport or Message Queuing Telemetry Transport) é um protocolo indicado, é o principal protocolo de comunicação para IoT. O MQTT foi desenvolvido pela IBM, está na base do TCP/IP, é um protocolo de mensagem assíncrona (M2M, máquina para máquina), e que foi padronizado pela OASIS.
+
+Diferentemente do modelo de arquitetura cliente/servidor,o uso do MQTT apresenta a arquitetura de pub/sub. Utiliza-se um message brocker que recebe as publicações dos dispositivos com os dados coletados e as envia para as aplicações inscritas para aquela mensagem.
+
+
+
+
+
+
 
 [EU]:https://github.com/albuquerq "Natan Albuquerque"
 [DIO]:https://web.digitalinnovation.one "Digital Innovation One"
 [PROFESSOR]:https://linkedin.com/in/omneto "Oswaldo Mauricio Neto"
 [ARPANET]:https://pt.wikipedia.org/wiki/ARPANET "ARPANET"
 [MARK_WEISER]:https://pt.wikipedia.org/wiki/Mark_Weiser "Mark Weiser"
+[MQTT]:https://pt.wikipedia.org/wiki/MQTT "MQ Telemetry Transport or Message Queuing Telemetry Transport"
